@@ -7,7 +7,7 @@ let schoolData=[];
 function getData(){
     axios.get('https://soa.tainan.gov.tw/Api/Service/Get/b1054400-86a4-40fa-aea0-fb39fce361e2')
     .then(function(response){
-        console.log(response.data);
+        console.log(response.data.data);
         schoolData=response.data.data;
 
         renderData();
